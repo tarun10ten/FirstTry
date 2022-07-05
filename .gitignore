@@ -1,0 +1,35 @@
+# CAP FirstTry
+_out
+*.db
+connection.properties
+default-*.json
+.cdsrc-private.json
+gen/
+node_modules/
+target/
+
+# Web IDE, App Studio
+.che/
+.gen/
+
+# MTA
+*_mta_build_tmp
+*.mtar
+mta_archives/
+
+# Other
+.DS_Store
+*.orig
+*.log
+
+*.iml
+*.flattened-pom.xml
+
+# IDEs
+# .vscode
+# .idea
+
+        "start": "cds run",
+        "build": "cds build/all --clean;cp gen/srv/srv/csn.json srv/gen/;cp -r gen/db/src/gen db/src"
+        // "watch-firsttry_app_pass": "cds watch --open firsttry_app_pass/webapp/index.html?sap-ui-xx-viewCache=false",
+        // "undeploy": "cf undeploy FirstTry --delete-services --delete-service-keys"
